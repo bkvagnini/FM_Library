@@ -1,0 +1,96 @@
+
+<html><head><title>FM Library</title></head>
+<body>
+
+<h1>FM Library  Entry</h1>
+
+
+
+<form name="libraryform" action="library_insert.php" method="post" ENCTYPE="multipart/form-data">
+
+<!--
+<form name="libraryform" action="<?php echo $_SERVER['SELF'] ?>" method="post" ENCTYPE="multipart/form-data">
+-->
+
+<h3> Library Database Entry </h3>
+<table width="80%" border="1">
+ <!-- 
+ <tr>
+    <td><label>ID</label>
+      <label></label></td>
+    <td><input type="text" title="Library ID" name="ID" id="ID" /></td>
+  </tr>
+ --> 
+  <tr>
+    <td>Genre</td>
+    <td><select name="genre">
+      <option>Please Choose One...</option>
+      <option>Classical</option>
+      <option>Jazz</option>
+      <option>Seasonal</option>
+      <option>New World</option>
+      <option>World</option>
+      <option>Misc</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Format</label></td>
+    <td><select name="format">
+      <option selected>CD</option>
+      <option>Vinyl</option>
+      <option>Reel2Reel</option>
+      <option>DAT</option>
+      <option>Cassette</option>
+      <option>MiniDisc</option>
+      <option>Other</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Multidisk</label>
+      </td>
+	   <td><input type="text" title="multidisk" name="multidisk"id="multidisk" /></td>
+    <!-- 
+	<td><input name="multidisk" type="checkbox" id="multidisk" value="checkbox"></td> 
+	-->
+  </tr>
+  <tr>
+    <td><label>Catalog Number</label></td>
+    <td><input name="catalognum" type="text" id="catalognum" value=""></td>
+  </tr>
+  <tr>
+    <td><label>Track Number</label></td>
+    <td><input type="text" title="Time Spent (in minutes)" name="tracknum" id="tracknum" /></td>
+  </tr>
+  <tr>
+    <td><label>Track Name</label>
+      <label> </label></td>
+    <td><input type="text" title="Date" name="trackname" id="trackname" /></td>
+  </tr>
+  <tr>
+    <td><label>Track Length </label></td>
+    <td><input type="text" title="Date" name="tracklength" id="tracklength" /></td>
+  </tr>
+  <tr>
+    <td><label>Artist/ Performer </label>
+      <label></label></td>
+    <td><input type="text" title="Time Spent (in minutes)" name="artist" id="artist" /></td>
+  </tr>
+  <tr>
+    <td><label>Composer </label>
+      <label></label></td>
+    <td><input type="text" title="Date" name="composer" id="composer" /></td>
+  </tr>
+  <tr>
+    <td><label>Tags / Keywords </label></td>
+    <td><input type="text" title="Date" name="tags" id="tags" /></td>
+  </tr>
+</table>
+
+   
+   <input type="submit" value="Submit">
+  </p>
+</form>
+</body>
+</html>
